@@ -14,6 +14,7 @@ public class CarValidation2 {
     @RequestMapping("/carvalid2")
     public String getcarvalidation4(@Validated Car car, BindingResult bindingResult) {
         if (bindingResult.hasErrors()){
+            System.out.println("111");
             return bindingResult.getFieldError().getDefaultMessage();
         }
         return car.toString();
