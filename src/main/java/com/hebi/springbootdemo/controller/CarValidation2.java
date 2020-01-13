@@ -15,7 +15,7 @@ public class CarValidation2 {
     public String getcarvalidation4(@Validated Car car, BindingResult bindingResult) {
 
         System.out.println("我是输出");
-
+        System.out.println("我是董震");
         if (bindingResult.hasErrors()){
             return bindingResult.getFieldError().getDefaultMessage();
         }
