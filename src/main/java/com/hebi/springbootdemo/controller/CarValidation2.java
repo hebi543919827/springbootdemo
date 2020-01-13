@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class CarValidation2 {
     @RequestMapping("/carvalid2")
     public String getcarvalidation4(@Validated Car car, BindingResult bindingResult) {
+
+        System.out.println("何碧你好");
         if (bindingResult.hasErrors()){
             return bindingResult.getFieldError().getDefaultMessage();
         }
