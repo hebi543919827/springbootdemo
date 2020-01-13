@@ -14,8 +14,12 @@ public class CarValidation2 {
     @RequestMapping("/carvalid2")
     public String getcarvalidation4(@Validated Car car, BindingResult bindingResult) {
 
+        System.out.println("我是输出");
+        System.out.println("我是董震");
+
         System.out.println("何碧你好啊");
         if (bindingResult.hasErrors()){
+            System.out.println("11aasasas1sadsadsa");
             return bindingResult.getFieldError().getDefaultMessage();
         }
         return car.toString();
