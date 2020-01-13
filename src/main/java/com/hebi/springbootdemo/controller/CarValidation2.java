@@ -17,6 +17,7 @@ public class CarValidation2 {
         System.out.println("我是输出");
         System.out.println("我是董震");
         if (bindingResult.hasErrors()){
+            System.out.println("11aasasas1sadsadsa");
             return bindingResult.getFieldError().getDefaultMessage();
         }
         return car.toString();
